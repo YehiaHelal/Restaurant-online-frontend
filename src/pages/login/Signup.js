@@ -121,7 +121,7 @@ export const SignupAction = async ({ request }) => {
   // const dataaa = async () => {
   try {
     const datas = await axios.post(
-      `http://localhost:4000/api/users/signup/`,
+      `https://restaurant-online-api-production.up.railway.app/api/users/signup/`,
       { submission },
       {
         withCredentials: true,
@@ -144,7 +144,7 @@ export const SignupAction = async ({ request }) => {
 };
 
 // const response = await axios({
-//   url: "http://localhost:4000/api/users/signup/",
+//   url: "https://restaurant-online-api-production.up.railway.app/api/users/signup/",
 //   method: "POST",
 //   body: { submission },
 // headers: {
@@ -152,7 +152,7 @@ export const SignupAction = async ({ request }) => {
 // },
 // });
 
-// const response = await fetch("http://localhost:4000/api/users/signup/", {
+// const response = await fetch("https://restaurant-online-api-production.up.railway.app/api/users/signup/", {
 //   method: "POST",
 //   body: JSON.stringify(submission),
 //   headers: {
@@ -178,7 +178,7 @@ export const SignupAction = async ({ request }) => {
 // );
 
 // const sendingRequest = async () => {
-//   const response = await fetch("http://localhost:4000/api/users/");
+//   const response = await fetch("https://restaurant-online-api-production.up.railway.app/api/users/");
 
 //   const json = await response.json();
 

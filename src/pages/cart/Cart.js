@@ -148,7 +148,7 @@ const Cart = () => {
   const BookingFunctionHandler = async () => {
     // fetch request and if ok the cookie will be removed
     const response = await axios.post(
-      "http://localhost:4000/api/orders/cartorder",
+      "https://restaurant-online-api-production.up.railway.app/api/orders/cartorder",
       { OrderDetails },
       {
         withCredentials: true,
@@ -189,7 +189,12 @@ const Cart = () => {
                       src={require(`./../../img/products/${item.image}`)}
                       alt="imageos"
                     ></img>
-                    <a href={"http://localhost:3000/" + item._id}>
+                    <a
+                      href={
+                        "https://restaurant-online-frontend.vercel.app/" +
+                        item._id
+                      }
+                    >
                       <p className="name">
                         {item.title} {/* can be big and in the center */}{" "}
                       </p>
@@ -199,7 +204,7 @@ const Cart = () => {
                       Number of items: {item.numberofitem}
                     </p>
 
-                    {/* <a href={"http://localhost:3000/" + item._id}></a> */}
+                    {/* <a href={"https://restaurant-online-frontend.vercel.app/" + item._id}></a> */}
                     <div className="cart-plus-subtract-buttons">
                       <button
                         onClick={() => {

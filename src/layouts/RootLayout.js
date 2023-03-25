@@ -17,7 +17,7 @@ export default function RootLayout() {
   const LogoutFunctionHandler = async () => {
     // fetch request and if ok the cookie will be removed
     const datas = await axios.post(
-      "http://localhost:4000/api/users/logout",
+      "https://restaurant-online-api-production.up.railway.app/api/users/logout",
       {},
       {
         withCredentials: true,
@@ -168,7 +168,11 @@ export default function RootLayout() {
 
           <NavLink
             className="search-button"
-            to={searchedNameobject ? "http://localhost:3000/" + id : ""}
+            to={
+              searchedNameobject
+                ? "https://restaurant-online-frontend.vercel.app/" + id
+                : ""
+            }
             onClick={() => {
               if (searchedNameobject === undefined) {
                 setShowSearchError(true);

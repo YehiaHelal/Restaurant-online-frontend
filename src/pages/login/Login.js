@@ -122,7 +122,7 @@ export const LoginAction = async ({ request }) => {
 
   try {
     const datas = await axios.post(
-      "http://localhost:4000/api/users/login",
+      "https://restaurant-online-api-production.up.railway.app/api/users/login",
       {
         submission,
       },
@@ -158,7 +158,7 @@ export const LoginAction = async ({ request }) => {
 // );
 
 // const sendingRequest = async () => {
-//   const response = await fetch("http://localhost:4000/api/users/");
+//   const response = await fetch("https://restaurant-online-api-production.up.railway.app/api/users/");
 
 //   const json = await response.json();
 

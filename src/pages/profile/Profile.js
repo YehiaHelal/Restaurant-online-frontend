@@ -18,7 +18,7 @@ export default function Profile() {
 
   async function handlegetpastorders() {
     const res = await axios.post(
-      "http://localhost:4000/api/orders/getuserorders",
+      "https://restaurant-online-api-production.up.railway.app/api/orders/getuserorders",
       { message: "hello" },
       {
         withCredentials: true,
@@ -105,7 +105,7 @@ export default function Profile() {
 
 export const ProfileLoader = async ({}) => {
   const res = await axios.post(
-    "http://localhost:4000/api/users/profile",
+    "https://restaurant-online-api-production.up.railway.app/api/users/profile",
     { message: "hello" },
     {
       withCredentials: true,
@@ -131,7 +131,7 @@ export const ProfileAction = async ({ request }) => {
   };
 
   const datas = await axios.post(
-    "http://localhost:4000/api/users/updateinfo",
+    "https://restaurant-online-api-production.up.railway.app/api/users/updateinfo",
     {
       submission,
     },
