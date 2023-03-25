@@ -170,7 +170,8 @@ export default function RootLayout() {
             className="search-button"
             to={
               searchedNameobject
-                ? "https://restaurant-online-frontend.vercel.app/" + id
+                ? "https://restaurant-online-frontend-production.up.railway.app/" +
+                  id
                 : ""
             }
             onClick={() => {

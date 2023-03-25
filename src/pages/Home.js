@@ -24,7 +24,7 @@ const Home = () => {
   // const firstTen = allItems.slice(0, 10);
 
   useEffect(() => {
-    const fetchWorkouts = async () => {
+    const fetchItems = async () => {
       const response = await fetch(
         "https://restaurant-online-api-production.up.railway.app/api/items/"
       );
@@ -36,7 +36,7 @@ const Home = () => {
       }
     };
 
-    fetchWorkouts();
+    fetchItems();
   }, [dispatcho]);
 
   useEffect(() => {

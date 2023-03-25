@@ -195,7 +195,8 @@ const AllItemsOnMainPage = (props) => {
                 ></img>
                 <a
                   href={
-                    "https://restaurant-online-frontend.vercel.app/" + item._id
+                    "https://restaurant-online-frontend-production.up.railway.app/" +
+                    item._id
                   }
                 >
                   <h4 className="name">

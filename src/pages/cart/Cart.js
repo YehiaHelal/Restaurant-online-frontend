@@ -191,7 +191,7 @@ const Cart = () => {
                     ></img>
                     <a
                       href={
-                        "https://restaurant-online-frontend.vercel.app/" +
+                        "https://restaurant-online-frontend-production.up.railway.app/" +
                         item._id
                       }
                     >
@@ -204,7 +204,7 @@ const Cart = () => {
                       Number of items: {item.numberofitem}
                     </p>
 
-                    {/* <a href={"https://restaurant-online-frontend.vercel.app/" + item._id}></a> */}
+                    {/* <a href={"https://restaurant-online-frontend-production.up.railway.app/" + item._id}></a> */}
                     <div className="cart-plus-subtract-buttons">
                       <button
                         onClick={() => {
