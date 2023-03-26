@@ -204,7 +204,6 @@ const Cart = () => {
                       Number of items: {item.numberofitem}
                     </p>
 
-                    {/* <a href={"https://restaurant-online-frontend-production.up.railway.app/" + item._id}></a> */}
                     <div className="cart-plus-subtract-buttons">
                       <button
                         onClick={() => {
@@ -409,7 +408,7 @@ const Cart = () => {
               </div>
             )}
 
-            {!user &&
+            {user &&
               !hideOrderButton &&
               MealItemsSavedFromLocalStorage.length > 0 && (
                 <button onClick={BookingFunctionHandler}>

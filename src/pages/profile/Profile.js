@@ -32,7 +32,7 @@ export default function Profile() {
       }
     );
     if (res.status === 200) {
-      console.log("order back successfully");
+      // console.log("order back successfully");
       SetOrderBackData(res);
       SetShowEdityourInformationTap(false);
       SetShowOrderback(true);
@@ -71,6 +71,10 @@ export default function Profile() {
                   <div key={item._id}>
                     <p>Order number: {index + 1} </p>
                     <p>Meal: {item.orderProducts.toString()}</p>
+                    <p>
+                      Number of items for each item:{" "}
+                      {item.numberofitems.toString()}
+                    </p>
                     <p>Order Total Price: ${item.orderTotalValue}</p>
                     ------
                   </div>
