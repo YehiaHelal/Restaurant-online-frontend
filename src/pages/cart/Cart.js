@@ -395,7 +395,6 @@ const Cart = () => {
             <p>Order Details: </p>
             <p>Order total price: {orderTotalvalue}$ </p>
 
-            {!user && <p>To place the order please login</p>}
             {handlesetPlaceOrderButton}
 
             {placeOrderButton && (
@@ -407,6 +406,8 @@ const Cart = () => {
                 <p>Please add a Meal first to order it</p>
               </div>
             )}
+
+            {!user && <p>To place the order please login</p>}
 
             {user &&
               !hideOrderButton &&
