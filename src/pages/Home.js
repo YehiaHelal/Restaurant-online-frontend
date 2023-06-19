@@ -20,6 +20,7 @@ const Home = () => {
   const { user, dispatchUser } = useAuthContext();
   const [slidingImagesOffer, setSlidingImagesOffer] = useState(1);
   const [slidingThirtyOfferItems, setSlidingThirtyOfferItems] = useState(1);
+  const [showAlertNotifcation, setshowAlertNotifcation] = useState(true);
 
   // const firstTen = allItems.slice(0, 10);
 
@@ -37,6 +38,16 @@ const Home = () => {
     };
 
     fetchItems();
+  }, [dispatcho]);
+
+  useEffect(() => {
+    if (showAlertNotifcation) {
+      alert(
+        "Hello! ,Please wait 30 seconds for the Backend/Database server to start working again (because it's a free hosting after 15min of inactivity it stops working)"
+      );
+
+      setshowAlertNotifcation(false);
+    }
   }, [dispatcho]);
 
   useEffect(() => {
