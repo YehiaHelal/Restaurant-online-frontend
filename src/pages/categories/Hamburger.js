@@ -12,7 +12,7 @@ const Hamburger = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        "https://restaurant-online-api-production.up.railway.app/api/items/"
+        "https://restaurantapi-3anw.onrender.com/api/items/"
       );
       const json = await response.json();
 

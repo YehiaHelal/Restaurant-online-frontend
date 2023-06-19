@@ -10,31 +10,31 @@ export default function Footer() {
         </div>
         <div className="footer-row">
           <div>
-            <a href="https://restaurant-online-frontend-production.up.railway.app/about">
+            <a href="https://restaurant-online-frontend.vercel.app/about">
               About Us
             </a>
           </div>
 
           <div>
-            <a href="https://restaurant-online-frontend-production.up.railway.app/contact">
+            <a href="https://restaurant-online-frontend.vercel.app/contact">
               Contact
             </a>
           </div>
           <div>
-            <a href="https://restaurant-online-frontend-production.up.railway.app/help">
+            <a href="https://restaurant-online-frontend.vercel.app/help">
               FAQ Page
             </a>
           </div>
         </div>
         <div className="footer-row">
           <div>
-            <a href="https://restaurant-online-frontend-production.up.railway.app/contact">
+            <a href="https://restaurant-online-frontend.vercel.app/contact">
               Our Services
             </a>
           </div>
 
           <div>
-            <a href="https://restaurant-online-frontend-production.up.railway.app/contact">
+            <a href="https://restaurant-online-frontend.vercel.app/contact">
               Our branches
             </a>
           </div>

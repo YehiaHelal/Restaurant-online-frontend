@@ -35,7 +35,7 @@ const ReviewForum = () => {
   useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(
-        "https://restaurant-online-api-production.up.railway.app/api/items/"
+        "https://restaurantapi-3anw.onrender.com/api/items/"
       );
 
       const json = await response.json();
@@ -75,7 +75,7 @@ const ReviewForum = () => {
   // useEffect(() => {
   //   const fetchWorkouts = async () => {
   //     const response = await fetch(
-  //       "https://restaurant-online-api-production.up.railway.app/api/reviews/getuserreviews"
+  //       "https://restaurantapi-3anw.onrender.com/api/reviews/getuserreviews"
   //     );
   //     const json = await response.json();
 
@@ -168,7 +168,7 @@ export default ReviewForum;
 // data loader
 export const ReviewForumPageLoader = async ({}) => {
   const res = await fetch(
-    "https://restaurant-online-api-production.up.railway.app/api/reviews/getuserreviews"
+    "https://restaurantapi-3anw.onrender.com/api/reviews/getuserreviews"
   );
 
   if (!res.ok) {
@@ -187,7 +187,7 @@ export const ReviewForumAction = async ({ request }) => {
   };
 
   const datas = await axios.post(
-    "https://restaurant-online-api-production.up.railway.app/api/reviews/addreview",
+    "https://restaurantapi-3anw.onrender.com/api/reviews/addreview",
     {
       reviewdetails,
     },

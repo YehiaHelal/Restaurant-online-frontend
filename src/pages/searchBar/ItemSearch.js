@@ -140,7 +140,7 @@ export const itemSearchLoader = async ({ params }) => {
   const { id } = params;
 
   const res = await fetch(
-    "https://restaurant-online-api-production.up.railway.app/api/items/" + id
+    "https://restaurantapi-3anw.onrender.com/api/items/" + id
   );
 
   if (!res.ok) {

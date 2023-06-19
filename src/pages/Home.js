@@ -26,7 +26,7 @@ const Home = () => {
   useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(
-        "https://restaurant-online-api-production.up.railway.app/api/items/"
+        "https://restaurantapi-3anw.onrender.com/api/items/"
       );
 
       const json = await response.json();
@@ -44,7 +44,7 @@ const Home = () => {
       const checkToken = async () => {
         try {
           const datas = await axios.post(
-            "https://restaurant-online-api-production.up.railway.app/api/users/checktoken",
+            "https://restaurantapi-3anw.onrender.com/api/users/checktoken",
             {
               message: "checkme",
             },
@@ -95,7 +95,7 @@ const Home = () => {
 export default Home;
 
 // export const allItemLoader = async () => {
-//   const res = await fetch("https://restaurant-online-api-production.up.railway.app/api/items/");
+//   const res = await fetch("https://restaurantapi-3anw.onrender.com/api/items/");
 
 //   return res.json();
 // };

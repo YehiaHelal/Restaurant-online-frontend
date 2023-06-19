@@ -121,7 +121,7 @@ export const LoginAction = async ({ request }) => {
 
   try {
     const datas = await axios.post(
-      "https://restaurant-online-api-production.up.railway.app/api/users/login",
+      "https://restaurantapi-3anw.onrender.com/api/users/login",
       {
         submission,
       },
@@ -158,7 +158,7 @@ export const LoginAction = async ({ request }) => {
 // );
 
 // const sendingRequest = async () => {
-//   const response = await fetch("https://restaurant-online-api-production.up.railway.app/api/users/");
+//   const response = await fetch("https://restaurantapi-3anw.onrender.com/api/users/");
 
 //   const json = await response.json();
 

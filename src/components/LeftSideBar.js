@@ -6,45 +6,27 @@ const LeftSideBar = () => {
       <div className="left-side-bar-categories">
         <p>Meals Categories: </p>
         <p>
-          <Link
-            to={"https://restaurant-online-frontend-production.up.railway.app/"}
-          >
+          <Link to={"https://restaurant-online-frontend.vercel.app/"}>
             All Meals
           </Link>
         </p>
         <p>
-          <Link
-            to={
-              "https://restaurant-online-frontend-production.up.railway.app/pizza"
-            }
-          >
+          <Link to={"https://restaurant-online-frontend.vercel.app/pizza"}>
             Pizza
           </Link>
         </p>
         <p>
-          <Link
-            to={
-              "https://restaurant-online-frontend-production.up.railway.app/pasta"
-            }
-          >
+          <Link to={"https://restaurant-online-frontend.vercel.app/pasta"}>
             Pasta
           </Link>
         </p>
         <p>
-          <Link
-            to={
-              "https://restaurant-online-frontend-production.up.railway.app/hamburger"
-            }
-          >
+          <Link to={"https://restaurant-online-frontend.vercel.app/hamburger"}>
             Hamburger
           </Link>
         </p>
         <p>
-          <Link
-            to={
-              "https://restaurant-online-frontend-production.up.railway.app/chicken"
-            }
-          >
+          <Link to={"https://restaurant-online-frontend.vercel.app/chicken"}>
             Chicken
           </Link>
         </p>
