@@ -121,7 +121,7 @@ export const LoginAction = async ({ request }) => {
 
   try {
     const datas = await axios.post(
-      "https://restaurantapi-3anw.onrender.com/api/users/login",
+      "https://www.rrestaurantbk.shoponlinemarket.cloud/api/users/login",
       {
         submission,
       },
@@ -158,7 +158,7 @@ export const LoginAction = async ({ request }) => {
 // );
 
 // const sendingRequest = async () => {
-//   const response = await fetch("https://restaurantapi-3anw.onrender.com/api/users/");
+//   const response = await fetch("https://www.rrestaurantbk.shoponlinemarket.cloud/api/users/");
 
 //   const json = await response.json();
 

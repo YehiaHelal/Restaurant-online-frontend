@@ -35,7 +35,7 @@ const ReviewForum = () => {
   useEffect(() => {
     const fetchItems = async () => {
       const response = await fetch(
-        "https://restaurantapi-3anw.onrender.com/api/items/"
+        "https://www.rrestaurantbk.shoponlinemarket.cloud/api/items/"
       );
 
       const json = await response.json();
@@ -75,7 +75,7 @@ const ReviewForum = () => {
   // useEffect(() => {
   //   const fetchWorkouts = async () => {
   //     const response = await fetch(
-  //       "https://restaurantapi-3anw.onrender.com/api/reviews/getuserreviews"
+  //       "https://www.rrestaurantbk.shoponlinemarket.cloud/api/reviews/getuserreviews"
   //     );
   //     const json = await response.json();
 
@@ -168,7 +168,7 @@ export default ReviewForum;
 // data loader
 export const ReviewForumPageLoader = async ({}) => {
   const res = await fetch(
-    "https://restaurantapi-3anw.onrender.com/api/reviews/getuserreviews"
+    "https://www.rrestaurantbk.shoponlinemarket.cloud/api/reviews/getuserreviews"
   );
 
   if (!res.ok) {
@@ -187,7 +187,7 @@ export const ReviewForumAction = async ({ request }) => {
   };
 
   const datas = await axios.post(
-    "https://restaurantapi-3anw.onrender.com/api/reviews/addreview",
+    "https://www.rrestaurantbk.shoponlinemarket.cloud/api/reviews/addreview",
     {
       reviewdetails,
     },

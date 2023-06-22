@@ -13,7 +13,7 @@ const Pasta = () => {
   useEffect(() => {
     const fetchWorkouts = async () => {
       const response = await fetch(
-        "https://restaurantapi-3anw.onrender.com/api/items/"
+        "https://www.rrestaurantbk.shoponlinemarket.cloud/api/items/"
       );
       const json = await response.json();
 

@@ -140,7 +140,7 @@ export const itemSearchLoader = async ({ params }) => {
   const { id } = params;
 
   const res = await fetch(
-    "https://restaurantapi-3anw.onrender.com/api/items/" + id
+    "https://www.rrestaurantbk.shoponlinemarket.cloud/api/items/" + id
   );
 
   if (!res.ok) {

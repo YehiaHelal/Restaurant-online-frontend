@@ -148,7 +148,7 @@ const Cart = () => {
   const BookingFunctionHandler = async () => {
     // fetch request and if ok the cookie will be removed
     const response = await axios.post(
-      "https://restaurantapi-3anw.onrender.com/api/orders/cartorder",
+      "https://www.rrestaurantbk.shoponlinemarket.cloud/api/orders/cartorder",
       { OrderDetails },
       {
         withCredentials: true,

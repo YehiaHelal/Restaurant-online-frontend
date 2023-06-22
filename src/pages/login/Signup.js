@@ -121,7 +121,7 @@ export const SignupAction = async ({ request }) => {
   // const dataaa = async () => {
   try {
     const datas = await axios.post(
-      `https://restaurantapi-3anw.onrender.com/api/users/signup/`,
+      `https://www.rrestaurantbk.shoponlinemarket.cloud/api/users/signup/`,
       { submission },
       {
         withCredentials: true,
@@ -144,7 +144,7 @@ export const SignupAction = async ({ request }) => {
 };
 
 // const response = await axios({
-//   url: "https://restaurantapi-3anw.onrender.com/api/users/signup/",
+//   url: "https://www.rrestaurantbk.shoponlinemarket.cloud/api/users/signup/",
 //   method: "POST",
 //   body: { submission },
 // headers: {
@@ -152,7 +152,7 @@ export const SignupAction = async ({ request }) => {
 // },
 // });
 
-// const response = await fetch("https://restaurantapi-3anw.onrender.com/api/users/signup/", {
+// const response = await fetch("https://www.rrestaurantbk.shoponlinemarket.cloud/api/users/signup/", {
 //   method: "POST",
 //   body: JSON.stringify(submission),
 //   headers: {
@@ -178,7 +178,7 @@ export const SignupAction = async ({ request }) => {
 // );
 
 // const sendingRequest = async () => {
-//   const response = await fetch("https://restaurantapi-3anw.onrender.com/api/users/");
+//   const response = await fetch("https://www.rrestaurantbk.shoponlinemarket.cloud/api/users/");
 
 //   const json = await response.json();
 

@@ -18,7 +18,7 @@ export default function Profile() {
 
   async function handlegetpastorders() {
     const res = await axios.post(
-      "https://restaurantapi-3anw.onrender.com/api/orders/getuserorders",
+      "https://www.rrestaurantbk.shoponlinemarket.cloud/api/orders/getuserorders",
       { message: "hello" },
       {
         withCredentials: true,
@@ -109,7 +109,7 @@ export default function Profile() {
 
 export const ProfileLoader = async ({}) => {
   const res = await axios.post(
-    "https://restaurantapi-3anw.onrender.com/api/users/profile",
+    "https://www.rrestaurantbk.shoponlinemarket.cloud/api/users/profile",
     { message: "hello" },
     {
       withCredentials: true,
@@ -135,7 +135,7 @@ export const ProfileAction = async ({ request }) => {
   };
 
   const datas = await axios.post(
-    "https://restaurantapi-3anw.onrender.com/api/users/updateinfo",
+    "https://www.rrestaurantbk.shoponlinemarket.cloud/api/users/updateinfo",
     {
       submission,
     },
